@@ -25,7 +25,7 @@ var Crossfade = new Class({
     this.setOptions(options);
     this.element = element;
     this.currentIndex = 0;
-    this.images = element.getElements('img');
+    this.images = element.getChildren();
     for (var i = 0; i < this.images.length; i++) {
       if (i in this.images) {
         this.images[i].setStyles({ top: 0, left: 0, position: "absolute" });
